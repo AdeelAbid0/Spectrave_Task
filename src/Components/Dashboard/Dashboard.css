@@ -1,0 +1,37 @@
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-rows: 8rem;
+  justify-content: center;
+  column-gap: 15rem;
+}
+
+.container1 .revenue {
+  border: 0.1rem solid lightgray;
+}
+
+.container1 .potential {
+  border: 0.1rem solid lightgray;
+}
+
+.container1 .power {
+  border: 0.1rem solid lightgray;
+}
+
+.chartcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(40rem, 1fr));
+  column-gap: 8rem;
+  row-gap: 10rem;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 0 5rem;
+}
+
+.chart1,
+.chart2,
+.chart3,
+.chart4 {
+  text-align: center;
+}

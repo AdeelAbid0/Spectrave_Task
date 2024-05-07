@@ -1,0 +1,49 @@
+.anomaliesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.anomalies1 img {
+  background-size: cover;
+  width: 100%;
+  max-width: 50rem;
+  height: auto;
+}
+
+.anomalies2 {
+  background-color: rgba(172, 169, 169, 0.156);
+  width: 100%;
+  max-width: 50rem;
+}
+
+.anomalies2 p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: left;
+  font-family: poppins;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+table {
+  border-radius: 10rem;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+table tbody tr {
+  border-bottom: 0.1rem solid lightgray;
+}
+
+table tbody tr td {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: poppins;
+  text-align: center;
+}
