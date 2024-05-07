@@ -44,14 +44,38 @@ const Navbar = () => {
         </div>
         <div className="nav2"></div>
       </div>
-      <Sidebar visible={visible} onHide={() => setVisible(false)}>
-        <h2>Sidebar</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+
+      <Sidebar
+        className="sidebar"
+        visible={visible}
+        onHide={() => setVisible(false)}
+      >
+        <ul>
+          <li
+            className={activeItem === 0 ? "active" : ""}
+            onClick={() => handleItemClick(0, "/dashboard")}
+          >
+            Dashboard
+          </li>
+          <li
+            className={activeItem === 1 ? "active" : ""}
+            onClick={() => handleItemClick(1, "/site_info")}
+          >
+            Site Info
+          </li>
+          <li
+            className={activeItem === 2 ? "active" : ""}
+            onClick={() => handleItemClick(2, "/anomalies")}
+          >
+            Anomalies
+          </li>
+          <li
+            className={activeItem === 3 ? "active" : ""}
+            onClick={() => handleItemClick(3, "/report")}
+          >
+            Report
+          </li>
+        </ul>
       </Sidebar>
       <Button
         className="fa-solid fa-bars fa-2xl burger"

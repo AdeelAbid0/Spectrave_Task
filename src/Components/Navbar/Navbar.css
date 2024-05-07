@@ -42,4 +42,23 @@ ul li.active {
   .nav {
     display: none;
   }
+  .sidebar {
+    background-color: white;
+    padding: 20px;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .sidebar ul li {
+    padding: 25px 0px;
+  }
+
+  .sidebar ul li.active {
+    border: none;
+    border-bottom: 1px solid lightgray;
+  }
 }

@@ -1,26 +1,28 @@
 import React from "react";
 import { Chart } from "react-google-charts";
-const Bar4 = () => {
+const Bar1 = () => {
   const data = [
-    ["", ""],
-    ["Active Bypass Diode", 50000],
-    ["Single-Cell Hotspot", 35000],
-    ["Multi-Cell Hotspot", 15000],
+    ["", "", { role: "style" }],
+    ["Active Bypass Diode", 50000, "red"],
+    ["Single-Cell Hotspot", 35000, "yellow"],
+    ["Multi-Cell Hotspot", 15000, "orange"],
   ];
   const options = {
     title: "Accumulative Financial-Loss (Per Fault Type)",
-    colors: ["red", "green", "blue"],
     vAxis: {
       title: "Estimated Annual Loss",
-      minValue: 0,
-      maxValue: 60000,
-      ticks: [0, 10000, 20000, 30000, 40000, 50000],
+      titleTextStyle: {
+        color: "#333",
+        fontSize: 14,
+        bold: true,
+        italic: false,
+      },
     },
   };
   return (
     <>
       <Chart
-        chartType="Bar"
+        chartType="ColumnChart"
         width="100%"
         height="400px"
         data={data}
@@ -30,4 +32,4 @@ const Bar4 = () => {
   );
 };
 
-export default Bar4;
+export default Bar1;
